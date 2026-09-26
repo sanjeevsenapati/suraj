@@ -1,7 +1,7 @@
 import React from 'react';
 import { siteConfig } from '../data/config';
 import './Hero.css';
-import heroImg from '../assets/hero.jpg';
+import heroImg from '../assets/trainer-hero.jpg';
 
 const Hero: React.FC = () => {
   return (

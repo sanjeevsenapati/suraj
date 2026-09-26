@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import trainerImg from '../assets/trainer.jpg';
+import trainerImg from '../assets/trainer-about.jpg';
 
 const About: React.FC = () => {
   return (
