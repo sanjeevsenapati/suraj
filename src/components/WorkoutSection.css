@@ -1,0 +1,44 @@
+.workouts-section {
+  background-color: var(--bg-secondary);
+}
+
+.workouts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.workout-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.workout-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.meta-tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.exercise-list {
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent-color);
+}
+
+.exercise-list li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.exercise-list li::before {
+  content: '- ';
+  color: var(--accent-color);
+}

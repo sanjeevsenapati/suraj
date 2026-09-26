@@ -1,0 +1,24 @@
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(5, 5, 5, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-bottom: 1px solid var(--glass-border);
+  gap: 1.5rem;
+}
+
+@media (min-width: 993px) {
+  .nav-links.active {
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    padding: 0;
+    border: none;
+    width: auto;
+  }
+}

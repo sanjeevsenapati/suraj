@@ -1,0 +1,88 @@
+.nutrition-section {
+  background-color: var(--bg-secondary);
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.nutrition-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.nutrition-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nutrition-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.nutrition-card:hover .nutrition-image {
+  transform: scale(1.05);
+}
+
+.nutrition-card h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.nutrition-examples ul {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.nutrition-examples li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  position: relative;
+}
+
+.nutrition-examples li::before {
+  content: '•';
+  color: var(--accent-color);
+  position: absolute;
+  left: -1rem;
+}
+
+.smart-habits {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(204, 255, 0, 0.03);
+  border-color: rgba(204, 255, 0, 0.1);
+}
+
+.habits-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.habits-list li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.habits-list li::before {
+  content: '✓';
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.text-sm {
+  font-size: 0.85rem;
+}
