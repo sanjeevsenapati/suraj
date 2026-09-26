@@ -24,7 +24,9 @@ const Goals: React.FC = () => {
         <div className="goals-grid">
           {siteConfig.goals.map((goal) => (
             <div key={goal.id} className="goal-card glass-card">
-              <div className="goal-icon text-accent">{goal.icon}</div>
+              <div className="goal-icon-wrapper">
+                <div className="goal-icon">{goal.icon}</div>
+              </div>
               <h3 className="goal-title">{goal.title}</h3>
               <p className="goal-desc">{goal.description}</p>
               
