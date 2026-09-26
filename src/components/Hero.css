@@ -105,11 +105,22 @@
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding-top: 6rem;
+  }
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-cta .btn {
+    width: 100%;
+    margin-bottom: 0;
+  }
   .hero-stats {
     gap: 1rem;
   }
   .stat-item {
-    min-width: 140px;
+    min-width: 130px;
     padding: 1rem;
   }
   .stat-value {
